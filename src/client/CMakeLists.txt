@@ -1,9 +1,9 @@
 # client options
 add_definitions(-DCLIENT)
-option(BOT_PROTECTION "Enable bot protection" ON)
+option(BOT_PROTECTION "Enable bot protection" OFF)
 if(BOT_PROTECTION)
     add_definitions(-DBOT_PROTECTION)
-    message(STATUS "Bot protection: ON")
+    message(STATUS "Bot protection: OFF")
 else(BOT_PROTECTION)
     message(STATUS "Bot protection: OFF")
 endif(BOT_PROTECTION)
